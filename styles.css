@@ -1,0 +1,58 @@
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-family: "Nunito",sans-serif;
+}
+  
+.dark-mode {
+    background-color: rgba(15, 14, 14, 0.838);
+    color: white;
+}
+
+input:checked +label {
+    background: rgb(63, 63, 63);
+    color:rgb(63, 63, 63);
+}
+.blan{
+   padding: 5px; 
+   margin: 0;
+   border-radius: 2px;
+   border-color: antiquewhite;
+   cursor: pointer;
+   font-family: "Nunito",sans-serif;
+}
+body.dark-mode .blan {
+    border-color: rgb(136, 135, 135); /* Example change for dark mode */
+    color: white;       /* Change text color */
+    background: rgb(63, 63, 63); /* Change background color */
+ }
+input:checked + label:after{
+    left:calc(100%-5px);
+    transform: translateX(150%);
+}
+#google_translate_element{ visibility: hidden;}
+#switch{visibility:hidden;}
+label{
+    content:'';
+    cursor: pointer;
+    text-indent: -5000px;
+    width:400px;
+    height:200px;
+    background: grey;
+    color:grey;
+    border-radius: 200px;
+    position:relative;
+}
+label:after{
+    content:'';
+    position:absolute;
+    top:6px;
+    left:8px;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius: 90px;
+    transition:0.4s;
+}

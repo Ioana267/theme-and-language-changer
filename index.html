@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Text translator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+   <p>On a misty morning, a solitary figure 
+    walked through the ancient forest, where 
+    the trees stood tall and dense. The air was 
+    filled with the scent of pine and the 
+    distant calls of birds. The ground beneath was
+    soft with a thick carpet of moss and fallen leaves. 
+    As the figure moved, the fog seemed to follow, swirling
+    around in silent waves. Along the path, stones with
+    intricate carvings peeked through the foliage, hinting 
+    at a lost civilization. In the distance, the faint sound 
+    of a waterfall whispered through the trees, guiding the 
+    figure deeper into the unknown.</p> 
+    <div style="display: flex; align-items: center;">
+        <div>
+            <p>Change theme: </p>
+        </div>
+        <div style="font-size:22px;">
+            <input type="checkbox" id="switch"/>
+            <label for="switch" onclick="darkmode()"> ------- </label>
+        
+        </div>
+        
+    </div>
+    <p>Translate the text to:</p>
+    <script  type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/javascript">
+        googleTranslateElementInit();
+    </script>
+    <button onclick="changeLanguageTo('fr')" class="blan">French</button>
+    <button onclick="changeLanguageTo('ro')" class="blan">Romanian</button>
+    <button onclick="changeLanguageTo('en')" class="blan">English</button>
+    <button onclick="changeLanguageTo('nl')" class="blan">Dutch</button>
+    <div id="google_translate_element"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
